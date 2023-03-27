@@ -16,6 +16,6 @@ app.get('/', (req, res) => {
 
 app.use(routes);
 mongoose.set('strictQuery', true);
-mongoose.connect('mongodb://localhost:27017/cards');
+mongoose.connect('mongodb://petyadesignstudio-api.onrender.com:27017/cards');
 
 app.listen(3030, () => console.log('Server is listening on port 3030'));
